@@ -157,7 +157,7 @@ console.log();
 // const addressProvince = address.filter(function(add){
 //     return add.province == "MISAMIS OCCIDENTAL";
 // }).map(function(add){
-//     return add.city;
+//     return add.barangay;
 // });
 
 // console.log(addressProvince);

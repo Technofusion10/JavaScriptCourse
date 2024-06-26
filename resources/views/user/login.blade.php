@@ -8,8 +8,10 @@
                     <span class="font-light text-gray-500 mb-8">
                         Welcome back! Please enter you cridentials
                     </span>
-                    <form action="#">
-                        <div class="py-4">
+                    <div id="msg"></div>
+                    <form action="#" method="get" id="myForm" class="myForm">
+                        {{-- @csrf --}}
+                        <div class="form-element py-4">
                             <label for="email" class="mb-2 text-md">Email</label>
                             <input
                             type="email"
@@ -18,11 +20,11 @@
                             id="email"
                             >
                         </div>
-                        <div class="py-4">
+                        <div class="form-element py-4">
                             <label for="password" class="mb-2 text-md">Password</label>
                             <input
                             type="password"
-                            class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+                            class="password w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
                             name="password"
                             id="password"
                             >
@@ -34,18 +36,24 @@
                             </div>
                             <span class="font-bold text-md">Forgot password</span>
                         </div>
-                        <button id="sign-in" type="submit" class="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300">
+                        <button id="btn" type="submit" class="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300">
                             Sign in
                         </button>
+
+                        <ul class="items">
+                            <li class="item mt-2 p-1 rounded font-semibold bg-gray-500 w-fit hover:bg-blue-500 transition ease-in-out delay-150 cursor-pointer">Value 1</li>
+                            <li class="item mt-2 p-1 rounded font-semibold bg-gray-500 w-fit hover:bg-blue-500 transition ease-in-out delay-150 cursor-pointer ">Value 2</li>
+                            <li class="item mt-2 p-1 rounded font-semibold bg-gray-500 w-fit hover:bg-blue-500 transition ease-in-out delay-150 cursor-pointer ">Value 3</li>
+                        </ul>
+
                     </form>
                 </div>
                 <div class="relative">
                     <img
                     src="{{asset('/image/login-pic.png')}}"
                     alt="img"
-                    class="w-[500px] h-full hidden rounded-r-2xl md:block object-cover"
+                    class="w-[600px] h-full hidden rounded-r-2xl md:block object-cover"
                     >
-
                 </div>
             </div>
             <p class="text-white text-center">Developed By : I.T. REGION 10</p>
